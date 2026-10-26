@@ -17,10 +17,10 @@ export default function Hero() {
 
       <div className="mx-auto grid max-w-6xl gap-x-12 gap-y-10 px-5 sm:px-8 lg:grid-cols-[1.12fr_0.88fr] lg:items-center lg:gap-y-6">
         <div className="lg:col-start-1 lg:row-start-1">
-          <div className="inline-flex items-center gap-2 rounded-full border border-emerald-400/25 bg-emerald-400/10 px-3.5 py-1.5 text-xs font-medium text-emerald-300">
+          <div className="inline-flex items-center gap-2 rounded-full border border-success/25 bg-success/10 px-3.5 py-1.5 text-xs font-medium text-success-soft">
             <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-70" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-success opacity-70" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-success" />
             </span>
             {profile.availability}
           </div>
@@ -70,8 +70,8 @@ export default function Hero() {
 
         <div className="mx-auto w-full max-w-sm sm:max-w-md lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:max-w-none">
           <div className="relative">
-            <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-tr from-primary/30 via-secondary/20 to-cyan-400/20 blur-2xl" />
-            <div className="relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-surface">
+            <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-tr from-primary/30 via-secondary/20 to-info/20 blur-2xl" />
+            <div className="relative overflow-hidden rounded-[1.75rem] border border-border/70 bg-surface">
               <Image
                 src={profile.photo}
                 alt={`Portrait of ${profile.name}`}
@@ -81,8 +81,8 @@ export default function Hero() {
                 sizes="(max-width: 1024px) 384px, 420px"
                 className="h-[360px] w-full object-cover object-top sm:h-[520px]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/85 via-transparent to-transparent" />
-              <div className="absolute inset-x-4 bottom-4 flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-background/70 px-4 py-3 backdrop-blur-md">
+              <div className="absolute inset-0 bg-gradient-to-t from-[#060b16]/85 via-transparent to-transparent" />
+              <div className="absolute inset-x-4 bottom-4 flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-[#060b16]/75 px-4 py-3 backdrop-blur-md">
                 <div>
                   <p className="text-sm font-semibold text-white">
                     {profile.name}
@@ -96,11 +96,11 @@ export default function Hero() {
             </div>
 
             <div className="absolute -left-4 top-10 hidden items-center gap-2 rounded-xl border border-border bg-surface/90 px-3 py-2 text-xs font-medium text-foreground shadow-xl backdrop-blur sm:flex">
-              <span className="h-2 w-2 rounded-full bg-cyan-400" />
+              <span className="h-2 w-2 rounded-full bg-info" />
               React · Next.js
             </div>
             <div className="absolute -right-3 top-1/3 hidden items-center gap-2 rounded-xl border border-border bg-surface/90 px-3 py-2 text-xs font-medium text-foreground shadow-xl backdrop-blur sm:flex">
-              <span className="h-2 w-2 rounded-full bg-amber-400" />
+              <span className="h-2 w-2 rounded-full bg-warning" />
               Python · AI/ML
             </div>
           </div>

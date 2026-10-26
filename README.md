@@ -1,6 +1,6 @@
 # Jotika Das — Portfolio
 
-A dark, responsive personal portfolio for **Jotika Das**, a Full Stack Developer and Computer Science & Engineering undergraduate at the University of Science and Technology Chittagong (USTC).
+A responsive personal portfolio for **Jotika Das**, a Full Stack Developer and Computer Science & Engineering undergraduate at the University of Science and Technology Chittagong (USTC). Ships with dark and light themes.
 
 **Live site:** [jotika-portfolio.vercel.app](https://jotika-portfolio.vercel.app)
 
@@ -9,6 +9,7 @@ A dark, responsive personal portfolio for **Jotika Das**, a Full Stack Developer
 ## Highlights
 
 - Responsive single-page portfolio with anchor navigation, scroll spy, and a full-screen mobile menu
+- Dark and light themes with a persisted toggle (defaults to dark, remembers the visitor's choice)
 - Hero banner with professional photo, availability status, one-click resume download, and social links
 - About section covering the development journey, AI/ML interests, and community work beyond code
 - Categorized, animated skill bars across frontend, backend, AI/ML, and tools

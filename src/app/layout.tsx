@@ -83,8 +83,16 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${spaceGrotesk.variable} scroll-smooth`}
+      suppressHydrationWarning
+      className={`${inter.variable} ${spaceGrotesk.variable} scroll-smooth dark`}
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem("theme");var theme=t==="light"?"light":"dark";var r=document.documentElement;r.classList.toggle("dark",theme==="dark");r.classList.toggle("light",theme==="light");r.style.colorScheme=theme;var m=document.querySelector('meta[name="theme-color"]');if(m){m.setAttribute("content",theme==="dark"?"#060b16":"#f4f7fc");}}catch(e){}})();`,
+          }}
+        />
+      </head>
       <body className="min-h-screen bg-background font-sans text-foreground antialiased">
         {children}
       </body>

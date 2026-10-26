@@ -72,7 +72,7 @@ export default function Skills() {
                               {skill.level}%
                             </span>
                           </div>
-                          <div className="h-1.5 overflow-hidden rounded-full bg-white/5">
+                          <div className="h-1.5 overflow-hidden rounded-full bg-foreground/10">
                             <motion.div
                               className="h-full rounded-full bg-gradient-to-r from-primary to-secondary"
                               initial={{ width: 0 }}
@@ -99,7 +99,7 @@ export default function Skills() {
                     {category.focus.map((tag) => (
                       <span
                         key={tag}
-                        className="rounded-md border border-border bg-white/[0.02] px-2 py-1 text-[10px] font-medium text-muted"
+                        className="rounded-md border border-border bg-foreground/[0.02] px-2 py-1 text-[10px] font-medium text-muted"
                       >
                         {tag}
                       </span>

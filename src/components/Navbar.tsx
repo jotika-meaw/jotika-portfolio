@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Download, Menu, X } from "lucide-react";
 import { profile } from "@/data/profile";
 import SocialLinks from "./SocialLinks";
+import ThemeToggle from "./ThemeToggle";
 
 const links = [
   { label: "About", href: "#about" },
@@ -107,6 +108,7 @@ export default function Navbar() {
         </ul>
 
         <div className="hidden items-center gap-3 lg:flex">
+          <ThemeToggle />
           <a
             href={profile.resume}
             download
@@ -117,16 +119,19 @@ export default function Navbar() {
           </a>
         </div>
 
-        <button
-          type="button"
-          className="flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-surface/70 text-foreground transition hover:border-primary/50 lg:hidden"
-          onClick={() => setOpen((value) => !value)}
-          aria-label={open ? "Close navigation menu" : "Open navigation menu"}
-          aria-expanded={open}
-          aria-controls="mobile-menu"
-        >
-          {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
+        <div className="flex items-center gap-2 lg:hidden">
+          <ThemeToggle />
+          <button
+            type="button"
+            className="flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-surface/70 text-foreground transition hover:border-primary/50"
+            onClick={() => setOpen((value) => !value)}
+            aria-label={open ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
+          >
+            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+        </div>
       </nav>
 
       <AnimatePresence>
@@ -154,7 +159,7 @@ export default function Navbar() {
                       className={`block rounded-xl px-3 py-3 text-sm font-medium transition ${
                         active === link.href.slice(1)
                           ? "bg-primary/10 text-primary-soft"
-                          : "text-muted hover:bg-white/[0.03] hover:text-foreground"
+                          : "text-muted hover:bg-foreground/[0.04] hover:text-foreground"
                       }`}
                     >
                       {link.label}

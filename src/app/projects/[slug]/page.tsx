@@ -20,6 +20,7 @@ import { profile } from "@/data/profile";
 import TechBadges from "@/components/ui/TechBadges";
 import Reveal from "@/components/ui/Reveal";
 import SocialLinks from "@/components/SocialLinks";
+import ThemeToggle from "@/components/ThemeToggle";
 
 type ProjectPageProps = {
   params: Promise<{ slug: string }>;
@@ -79,6 +80,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
             Back to portfolio
           </Link>
           <div className="flex items-center gap-2">
+            <ThemeToggle compact />
             <a
               href={profile.resume}
               download
@@ -139,7 +141,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
         </Reveal>
 
         <Reveal delay={0.1} className="mt-10">
-          <div className="overflow-hidden rounded-2xl border border-border bg-surface shadow-2xl shadow-black/20">
+          <div className="overflow-hidden rounded-2xl border border-border bg-surface shadow-2xl shadow-foreground/10">
             <Image
               src={project.image}
               alt={`${project.title} preview`}
@@ -184,7 +186,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
             <Reveal>
               <section>
                 <h2 className="flex items-center gap-2 font-display text-xl font-semibold text-foreground">
-                  <CheckCircle2 className="h-5 w-5 text-amber-300" />
+                  <CheckCircle2 className="h-5 w-5 text-warning-soft" />
                   Challenges Faced
                 </h2>
                 <ul className="mt-4 space-y-3">
@@ -193,7 +195,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
                       key={challenge}
                       className="flex gap-3 text-sm leading-7 text-muted"
                     >
-                      <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-300" />
+                      <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-warning" />
                       {challenge}
                     </li>
                   ))}
@@ -204,7 +206,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
             <Reveal>
               <section>
                 <h2 className="flex items-center gap-2 font-display text-xl font-semibold text-foreground">
-                  <Lightbulb className="h-5 w-5 text-emerald-300" />
+                  <Lightbulb className="h-5 w-5 text-success-soft" />
                   Potential Improvements & Future Plans
                 </h2>
                 <ul className="mt-4 space-y-3">
@@ -213,7 +215,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
                       key={improvement}
                       className="flex gap-3 text-sm leading-7 text-muted"
                     >
-                      <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-300" />
+                      <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-success" />
                       {improvement}
                     </li>
                   ))}

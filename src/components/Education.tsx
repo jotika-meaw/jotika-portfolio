@@ -52,7 +52,7 @@ export default function Education() {
                 </span>
               </div>
 
-              <span className="mt-4 inline-flex rounded-full border border-emerald-400/25 bg-emerald-400/10 px-3 py-1 text-xs font-medium text-emerald-300">
+              <span className="mt-4 inline-flex rounded-full border border-success/25 bg-success/10 px-3 py-1 text-xs font-medium text-success-soft">
                 {education.status}
               </span>
 
@@ -69,7 +69,7 @@ export default function Education() {
                   {profile.languages.map((language) => (
                     <span
                       key={language}
-                      className="rounded-md border border-border bg-white/[0.03] px-2.5 py-1 text-xs text-muted"
+                      className="rounded-md border border-border bg-foreground/[0.03] px-2.5 py-1 text-xs text-muted"
                     >
                       {language}
                     </span>
@@ -99,9 +99,9 @@ export default function Education() {
                 {certifications.map((certification) => (
                   <li
                     key={certification.name}
-                    className="flex items-start gap-3 rounded-xl border border-border/70 bg-white/[0.02] p-3.5"
+                    className="flex items-start gap-3 rounded-xl border border-border/70 bg-foreground/[0.02] p-3.5"
                   >
-                    <BadgeCheck className="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" />
+                    <BadgeCheck className="mt-0.5 h-4 w-4 shrink-0 text-success" />
                     <div>
                       <p className="text-sm font-medium leading-6 text-foreground/90">
                         {certification.name}

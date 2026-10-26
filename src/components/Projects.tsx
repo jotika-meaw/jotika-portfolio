@@ -40,7 +40,7 @@ export default function Projects() {
                     className="object-cover object-top transition duration-500 group-hover:scale-[1.04]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-80" />
-                  <span className="absolute left-4 top-4 rounded-full border border-white/15 bg-background/70 px-3 py-1 text-[11px] font-medium text-foreground backdrop-blur">
+                  <span className="absolute left-4 top-4 rounded-full border border-foreground/15 bg-background/70 px-3 py-1 text-[11px] font-medium text-foreground backdrop-blur">
                     {project.category}
                   </span>
                 </Link>

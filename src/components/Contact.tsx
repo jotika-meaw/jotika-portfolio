@@ -78,7 +78,7 @@ export default function Contact() {
               href={`tel:${profile.phoneHref}`}
               className="group flex items-start gap-4 rounded-2xl border border-border bg-surface/60 p-5 transition hover:border-primary/40 hover:bg-surface"
             >
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-400/10 text-emerald-300">
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-success/10 text-success-soft">
                 <Phone className="h-5 w-5" />
               </span>
               <div>
@@ -197,7 +197,7 @@ export default function Contact() {
                 </button>
 
                 {sent ? (
-                  <p className="flex items-center gap-2 text-sm text-emerald-300">
+                  <p className="flex items-center gap-2 text-sm text-success-soft">
                     <CheckCircle2 className="h-4 w-4" />
                     Your email app should open with the message pre-filled.
                   </p>
