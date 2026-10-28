@@ -81,11 +81,8 @@ export default function ThemeToggle({
         compact ? "h-9 w-9 rounded-lg" : "h-10 w-10 rounded-xl"
       } ${className}`}
     >
-      {theme === "dark" ? (
-        <Sun className="h-[18px] w-[18px]" />
-      ) : (
-        <Moon className="h-[18px] w-[18px]" />
-      )}
+      <Sun className="hidden h-[18px] w-[18px] dark:block" />
+      <Moon className="hidden h-[18px] w-[18px] light:block" />
     </button>
   );
 }
