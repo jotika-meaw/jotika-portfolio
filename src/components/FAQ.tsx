@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { MessageCircleQuestion, Plus } from "lucide-react";
 import SectionHeading from "./ui/SectionHeading";
 import Reveal from "./ui/Reveal";
@@ -21,8 +22,20 @@ const faqs = [
   },
   {
     question: "How can I get a copy of your resume?",
-    answer:
-      "You can download the PDF directly from the hero section, the navbar, or the resume page. If you need a tailored version for a specific role, email me and I'll be happy to share one.",
+    answer: (
+      <>
+        You can view it online or download the PDF directly from the hero
+        section, the navbar, or the{" "}
+        <Link
+          href="/resume"
+          className="font-semibold text-primary transition hover:text-primary-soft"
+        >
+          resume page
+        </Link>
+        . If you need a tailored version for a specific role, email me and
+        I&apos;ll be happy to share one.
+      </>
+    ),
   },
   {
     question: "Where are you based, and do you work remotely?",

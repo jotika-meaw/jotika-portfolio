@@ -1,7 +1,7 @@
 import {
   BrainCircuit,
+  Compass,
   GraduationCap,
-  HeartHandshake,
   Quote,
   Users,
 } from "lucide-react";
@@ -26,9 +26,9 @@ const highlights = [
     text: "Exploring computer vision, NLP, and data-driven applications.",
   },
   {
-    icon: HeartHandshake,
-    title: "Beyond Code",
-    text: "Community building, volunteering, and organizing tech events.",
+    icon: Compass,
+    title: "Life outside code",
+    text: "Reading, travelling, music, films, and community work keep me curious.",
   },
 ];
 

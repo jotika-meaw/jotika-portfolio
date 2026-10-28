@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowDown, ArrowUpRight, Download, MapPin, Sparkles } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Download, Eye, MapPin, Sparkles } from "lucide-react";
 import { profile } from "@/data/profile";
 import SocialLinks from "./SocialLinks";
 
@@ -50,8 +50,15 @@ export default function Hero() {
               Download Resume
             </a>
             <a
+              href="/resume"
+              className="group inline-flex h-12 items-center gap-2 rounded-xl border border-border bg-surface/60 px-5 text-sm font-semibold text-foreground transition hover:-translate-y-0.5 hover:border-primary/50 hover:bg-surface"
+            >
+              <Eye className="h-4 w-4" />
+              View Resume
+            </a>
+            <a
               href="#projects"
-              className="group inline-flex h-12 items-center gap-2 rounded-xl border border-border bg-surface/60 px-6 text-sm font-semibold text-foreground transition hover:-translate-y-0.5 hover:border-primary/50 hover:bg-surface"
+              className="group inline-flex h-12 items-center gap-2 rounded-xl border border-border bg-surface/60 px-5 text-sm font-semibold text-foreground transition hover:-translate-y-0.5 hover:border-primary/50 hover:bg-surface"
             >
               View Projects
               <ArrowUpRight className="h-4 w-4 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />

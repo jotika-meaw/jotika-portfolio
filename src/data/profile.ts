@@ -25,7 +25,7 @@ export const profile = {
     "I'm currently seeking software engineering and AI/ML internship opportunities. My long-term goal is to build scalable intelligent applications and contribute to open-source healthtech and biomedical software.",
   ],
   beyondCode:
-    "Outside of programming, I enjoy community building, volunteering, and organizing tech events — from leading outreach at the USTC Programming Club to supporting student-focused initiatives.",
+    "Outside of programming, I enjoy reading, travelling, and discovering new music and films. I also love community building and volunteering — from leading outreach at the USTC Programming Club to supporting student-focused initiatives.",
   languages: ["Bengali (Native)", "English (Professional)"],
   stats: [
     { value: "4+", label: "Live projects" },
